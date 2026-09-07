@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        /* Table Header */
+        thead {
+            background-color: #ffcccb;
+        }
+
+        /* Table Footer */
+        tfoot {
+            background-color: #d1c4e9;
+            font-weight: bold;
+        }
+
+        /* Lab hours */
+        .lab {
+            background-color: #a5d6a7;
+            font-weight: bold;
+        }
+
+        /* Elective hours */
+        .elective {
+            background-color: #ffeb3b;
+            font-weight: bold;
+        }
+
+        /* Lunch */
+        .lunch {
+            background-color: #ffcc80;
+            font-weight: bold;
+        }
+
+        /* Different row colours */
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #e3f2fd;
+        }
+
+        /* Keep special cells highlighted */
+        tbody .lab {
+            background-color: #a5d6a7;
+        }
+
+        tbody .elective {
+            background-color: #ffeb3b;
+        }
+
+        tbody .lunch {
+            background-color: #ffcc80;
+        }
+
+        /* Hover effect */
+        tbody tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align:center;">Class Time Table</h2>
+
+    <table>
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th scope="col">Day</th>
+                <th scope="col">9:00 - 10:00</th>
+                <th scope="col">10:00 - 11:00</th>
+                <th scope="col">11:00 - 12:00</th>
+                <th scope="col">12:00 - 1:00</th>
+                <th scope="col">1:00 - 2:00</th>
+                <th scope="col">2:00 - 3:00</th>
+                <th scope="col">3:00 - 4:00</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td scope="row">Monday</td>
+                <td>Math</td>
+                <td>English</td>
+                <td colspan="2" class="lab">Physics Lab</td>
+                <td class="lunch">Lunch</td>
+                <td class="elective">Elective - Art</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <td scope="row">Tuesday</td>
+                <td>Chemistry</td>
+                <td>Biology</td>
+                <td>History</td>
+                <td>Geography</td>
+                <td class="lunch">Lunch</td>
+                <td class="elective">Elective - Music</td>
+                <td>Computer</td>
+            </tr>
+            <tr>
+                <td scope="row">Wednesday</td>
+                <td colspan="2" class="lab">Chemistry Lab</td>
+                <td>Math</td>
+                <td>History</td>
+                <td class="lunch">Lunch</td>
+                <td>English</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <td scope="row">Thursday</td>
+                <td>Biology</td>
+                <td>English</td>
+                <td>Math</td>
+                <td>Physics</td>
+                <td class="lunch">Lunch</td>
+                <td class="elective">Elective - Drama</td>
+                <td>Library</td>
+            </tr>
+            <tr>
+                <td scope="row">Friday</td>
+                <td>History</td>
+                <td>Geography</td>
+                <td>Math</td>
+                <td>Chemistry</td>
+                <td class="lunch">Lunch</td>
+                <td class="lab">Computer Lab</td>
+                <td>Sports</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td colspan="8">End of Time Table</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
